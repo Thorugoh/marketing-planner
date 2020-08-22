@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 
 export const CheckboxContainer = styled.div`
+
   display: flex;
-  background-color: ${props => props.checked ? '#97C160' : '#F6F6F6'};
+  background-color: ${props => props.checked ? '#97C160' : '#E5E5E5'};
   border-radius: 5px;
   align-items: center;
   width: 120px;
-  height: 40px;
+  height: 35px;
   padding-left: 5px;
   margin: 0px 4px;
 `;
@@ -23,13 +24,24 @@ export const HiddenCheckbox = styled.input.attrs({type: 'checkbox'})`
   width: 1px; 
 `;
 
+export const Text = styled.label`
+  color: ${props => props.checked ? '#FFF' : '#555'};
+  
+`;
+
 export const StyledCheckbox = styled.label`
-  display: inline-block;
+  display: flex;
   width: 23px;
   height: 23px;
   background: #F6F6F6;
   border-radius: 50%;
   transition: all 150ms;
   margin-right: 6px;
-  box-shadow: 0 0 0 1px #939191;
+  box-shadow: 0 0 0 1px #F6F6F6;
+  justify-content: center;
+  align-items: center;
+  img {
+    display: ${props => props.checked ? 'flex' : 'none'};
+    filter: invert(75%) sepia(11%) saturate(6042%) hue-rotate(30deg) brightness(105%) contrast(68%);
+  }
 `;

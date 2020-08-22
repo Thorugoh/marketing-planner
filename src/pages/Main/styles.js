@@ -24,7 +24,7 @@ export const Container = styled.div`
 export const Label = styled.label`
     display: flex;
     flex-direction: column;
-    color: black;
+    color: #555;
     padding: 8px 0px;
 `;
 
@@ -64,17 +64,22 @@ export const TextInput = styled.input`
     height: 25px;
     margin-top: 4px;
     margin-right: 4px; 
-    border: 1px solid black;
+    border: 1px solid #E5E5E5;
     border-radius: 5px;
-    border-color: black;
+    border-color: #E5E5E5;
+    background-color: #E5E5E5;
     &:hover{
         border-color: #97c160;
-    }
+    };
 `;
 
 export const TextArea = styled.textarea`
-    max-width: 590px;
-    min-width: 590px;
+    width: 590px;
+    height: 200px;
+    resize: none;
     margin-top: 4px;
+    border: 1px solid #E5E5E5;
+    background-color: #E5E5E5;
+    border-radius: 5px;
     
 `;

@@ -1,6 +1,6 @@
-import React, {useState} from 'react';
+import React from 'react';
 
-import { Container, CheckBox, Label, CheckBoxInput, TextInput, TextArea} from './styles';
+import { Container, Label, TextInput, TextArea} from './styles';
 
 import Checkbox from "./Checkbox";
 
@@ -9,7 +9,7 @@ function Main() {
   return (
       <Container>
           <form>
-              <h1>Vamos iniciar o seu planejamento...</h1>
+              <h1 style={{color: '#555'}}>Vamos iniciar o seu planejamento...</h1>
               <Label>
                 Empresa
                 <TextInput type="text" name ="enterprise"/>
