@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 
-import { CheckboxContainer, HiddenCheckbox, StyledCheckbox, Text } from './styles';
 import CheckIcon from '../../../assets/images/tick.svg'
+import { CheckboxContainer, HiddenCheckbox, StyledCheckbox, Text } from './styles';
 
 export default function Checkbox({className, children, ...props}){
     const [checked, setChecked] = useState(false);

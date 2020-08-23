@@ -10,6 +10,9 @@ export const CheckboxContainer = styled.div`
   height: 35px;
   padding-left: 5px;
   margin: 0px 4px;
+  &:hover{
+        border-color: #97c160;
+    };
 `;
 
 export const HiddenCheckbox = styled.input.attrs({type: 'checkbox'})`

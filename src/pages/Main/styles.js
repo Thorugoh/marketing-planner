@@ -1,15 +1,50 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    background-color: #FAFBFB;
-    width: 750px;
+   display: flex;
+   flex-direction: row;
+`;
+
+export const Button = styled.button`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    width: 142px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    color: #FFF;
+    background-color: #97c160;
+`;
+
+export const PreviewContainer = styled.div`
+ background-color: #FAFBFB;
+    width: 530px;
     height: 760px;
-    margin: auto;
     padding-top: 20px;
     margin-top: 100px;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    form {
+
+    .row-form{
+        display: flex;
+        flex-direction: row;
+    }    
+`;
+
+export const FormContainer = styled.div`
+ background-color: #FAFBFB;
+    width: 750px;
+    height: 760px;
+    margin-left: 70px;
+    margin-right: 5px;
+    padding-top: 20px;
+    margin-top: 100px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    
+    form{
         margin: 76px;
         display: flex;
         flex-direction: column;
@@ -81,5 +116,7 @@ export const TextArea = styled.textarea`
     border: 1px solid #E5E5E5;
     background-color: #E5E5E5;
     border-radius: 5px;
-    
+    &:hover{
+        border-color: #97c160;
+    };
 `;
